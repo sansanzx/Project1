@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -27,17 +27,17 @@ namespace Project1
 
 
 
-        public void oper()
+        public void oper() //ส่วน medthod ในการเก็บข้อมูลพิสูจน์เงื่อนไงไข เพื่อนำไปใช้งานใน combobox select 
         {
 
 
-            if (comboBox1.SelectedItem == "นายพีระพงษ์ เทียบแสง")
+            if (comboBox1.SelectedItem == "นายพีระพงษ์ เทียบแสง") //แสดงชื่อในcombobox 
             {
-                pictureBox1.ImageLocation = "http://reg1.kku.ac.th/ephoto/getstudentimage.asp?id=593410305-9";
-                label5.Text = comboBox1.Text;
-                label6.Text = "Peerapong Thiabsaeng";
-                label7.Text = "088-3123205";
-                label9.Text = "593410305-9";
+                pictureBox1.ImageLocation = "http://reg1.kku.ac.th/ephoto/getstudentimage.asp?id=593410305-9"; //ส่วนที่ดึงภาพนักศึกษา
+                label5.Text = comboBox1.Text; //ดึงชื่อจาก combobox มาแสดงใน label
+                label6.Text = "Peerapong Thiabsaeng"; //แสดงชื่อ facebook
+                label7.Text = "088-3123205"; //แสดงเบอร์โทรศัพท์
+                label9.Text = "593410305-9"; // แสดงรหัสนักศึกษา
                 
 
             }
@@ -457,21 +457,21 @@ namespace Project1
             }
             else
             {
-                MessageBox.Show("ไม่พบข้อมูล", "ผลการค้นหา");
+                MessageBox.Show("ไม่พบข้อมูล", "ผลการค้นหา"); //กรณีไม่มีการเรียกใช้ชื่อ ในcombobox
             }
             
 
         }
-        private void button1_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e) //ปุ่มเพื่อกดค้นหา
         {
 
-            oper();
+            oper(); // medtod ที่เก็บผลดำเนินการ
             
             
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)//ออกจาก        โปรแกรม
         {
             Application.Exit();
         }
